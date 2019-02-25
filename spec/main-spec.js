@@ -37,6 +37,11 @@ describe('出租车计价测试', function () {
         let result=main(dis,time);
         expect(result).toEqual(12);
     });
-    
+    it("起步价6块，超过八公里后加收50%的每公里运价，",function(){
+        let dis=9;
+        let time=5;
+        let result=main(dis,time);
+        expect(result).toEqual(13);
+    });
 
 });
