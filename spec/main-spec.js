@@ -13,4 +13,10 @@ describe('出租车计价测试', function () {
         let result=main(dis,time);
         expect(result).toEqual(6);
     });
+    it("距离小于两公里，有停车等待，在起步价基础上加停车费用，四舍五入",function(){
+        let dis=1;
+        let time=5;
+        let result=main(dis,time);
+        expect(result).toEqual(7);
+    });
 });
