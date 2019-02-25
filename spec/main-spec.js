@@ -19,4 +19,10 @@ describe('出租车计价测试', function () {
         let result=main(dis,time);
         expect(result).toEqual(7);
     });
+    it("起步价6块，超出两公里后且不超过八公里，每公里0.8块",function(){
+        let dis=3;
+        let time=0;
+        let result=main(dis,time);
+        expect(result).toEqual(7);
+    });
 });
