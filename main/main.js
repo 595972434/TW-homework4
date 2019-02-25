@@ -8,5 +8,7 @@ module.exports = function main(dis,time) {
             return Math.round(6+time*0.25);
         else if(dis <=8)
             return Math.round(6+(dis-2)*0.8+time*0.25);
+        else
+            return Math.round(6+(dis-2)*0.8+(dis-8)*0.4+time*0.25);
     }
 };
